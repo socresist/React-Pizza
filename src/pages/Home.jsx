@@ -49,12 +49,7 @@ const Home = () => {
   return (
     <div className="container">
       <div className="content__top">
-        <Categories
-          categoryId={categoryId}
-          onClickCategory={(id) => {
-            setCategoryId(id);
-          }}
-        />
+        <Categories categoryId={categoryId} onClickCategory={(id) => {}} />
         <Sort
           sortType={sortType}
           onChangeSort={(i) => {
